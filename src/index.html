@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Угадай число</title>
+    <link rel="stylesheet" type="text/css" href="./assest/styles/index.css">
+</head>
+
+<body class="body">
+    <main class="main">
+    <h1>Угадай число</h1>
+    <div class="container">
+        <div class="container__info">
+            <label for="minRange">От:</label>
+            <input type="number" id="minRange" value="1">
+            <label for="maxRange">До:</label>
+            <input type="number" id="maxRange" value="100">
+            <button id="btnRange">Установить диапазон</button>
+            <input type="number" id="userInput">
+            <button id="btnGuess">Угадать</button>
+        </div>
+        <div class="container__info">
+            <p id="hint"></p>
+            <p id="attempts"></p>
+            <div class="thermometer" id="thermometer">
+                <input class="checkbox" id="checkbox" type="checkbox" title="Всплывающая подсказка">
+                <span class="checkboxText" id="checkboxText">Градусник</span>
+                
+            </div>
+        </div>
+        <div class="container__info">
+        <button id="btnReset">Начать заново</button></div>
+    </main>
+    </div>
+    <script src="./js/constants.js"></script>
+    <script src="./js/puzzle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

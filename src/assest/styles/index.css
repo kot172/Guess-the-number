@@ -1,0 +1,34 @@
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    position: relative;
+}
+
+.checkbox:hover::after {
+    content: 'Подсказка из нашей любимой детской игры "горячо-холодно" ';
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    top: 0px;
+    left: 95px;
+    z-index: 1;
+  }
+  
